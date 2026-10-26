@@ -18,5 +18,7 @@ from django.contrib import admin
 from django.urls import path
 
 urlpatterns = [
+    path('',views.index, name="todolist")
+    path('del/', views.remove, name="del")
     path('admin/', admin.site.urls),
 ]
